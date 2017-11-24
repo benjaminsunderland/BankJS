@@ -1,4 +1,7 @@
-function Account(){
+var Statement = require("./Statement.js")
+
+function Account(statement = new Statement){
+  this._statement = statement
   this._balance = 0
 }
 
